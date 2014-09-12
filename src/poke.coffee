@@ -1,5 +1,5 @@
 TeamSpeakClient	= require "node-teamspeak"
-Promise			= require "promise"
+Promise	= require "promise"
 
 msg = process.argv[2]
 p   = []
