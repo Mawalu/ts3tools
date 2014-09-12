@@ -1,10 +1,10 @@
 {
   "name": "ts3tools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Some small tools for the ts3 client query api",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mawalu/ts3tools.git"
+    "url": "https://github.com/Mawalu/ts3tools.git"
   },
   "keywords": [
     "teamspeak"
