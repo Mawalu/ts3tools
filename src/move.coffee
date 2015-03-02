@@ -7,8 +7,10 @@ id = 0
 p = []
 
 move = ()->
-	connection.send "clientmove", {"cid": channels[Math.floor(Math.random() * channels.length)], "clid": id}, () ->
-		process.nextTick move
+    join = channels[Math.floor(Math.random() * channels.length)]
+    if join isnt 28
+	    connection.send "clientmove", {"cid": join, "clid": id}, () ->
+		    process.nextTick move
 
 connection = new TeamSpeakClient "localhost", "25639"
 
